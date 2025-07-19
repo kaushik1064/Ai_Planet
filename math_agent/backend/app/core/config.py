@@ -16,16 +16,15 @@ class Settings(BaseSettings):
     PORT: int = 8000
     
     # Groq API settings
-    GROQ_API_KEY: str
+    GROQ_API_KEY: str = "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"
     GROQ_MODEL: str = "llama3-8b-8192"
     GROQ_TEMPERATURE: float = 0.1
     GROQ_MAX_TOKENS: int = 2048
     
     # Vector Database settings
-    QDRANT_HOST: str = "localhost"
-    QDRANT_PORT: int = 6333
-    QDRANT_COLLECTION_NAME: str = "math_problems"
-    QDRANT_API_KEY: Optional[str] = None
+    QDRANT_CLOUD_URL: str = "https://379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io"
+    QDRANT_API_KEY: Optional[str] = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.CDo5pEgbkWLAESD8nP8eKngTxTnKYwfaXJ32HfrzU0U"
+    QDRANT_COLLECTION_NAME: str = "ai_planet"
     
     # Database settings
     DATABASE_URL: str = "sqlite:///./math_agent.db"
@@ -35,8 +34,8 @@ class Settings(BaseSettings):
     
     # MCP settings
     MCP_SERVER_URL: str = "http://localhost:8001"
-    TAVILY_API_KEY: Optional[str] = None
-    SERPER_API_KEY: Optional[str] = None
+    TAVILY_API_KEY: Optional[str] = "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"
+    SERPER_API_KEY: Optional[str] = "cf56d6050f860e5d7cc80e5129be27df0e48cea6"
     
     # Knowledge base settings
     KB_CHUNK_SIZE: int = 1000
@@ -53,10 +52,10 @@ class Settings(BaseSettings):
     MIN_FEEDBACK_SAMPLES: int = 3
     
     # JEE Benchmark settings
-    JEE_DATASET_PATH: str = "data/jee_benchmark.json"
+    JEE_DATASET_PATH: str = "D:/ai_Planet/data/dataset.json"
     
     class Config:
-        env_file = ".env"
+        env_file = ".env.example"
         case_sensitive = True
 
 @lru_cache()

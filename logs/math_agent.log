@@ -1,0 +1,1502 @@
+2025-07-18 17:02:03 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 17:03:16 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 17:03:57 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 17:05:01 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 17:05:01 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 17:05:01 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 17:05:01 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-18 17:05:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 17:05:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 17:05:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 17:05:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 17:05:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 17:05:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 17:05:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-18 17:05:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-18 17:05:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 17:05:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 17:05:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-18 17:05:04 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-18 17:05:04 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-18 17:05:04 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-18 17:05:04 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-18 17:05:05 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-18 17:05:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-18 17:05:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-18 17:05:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-18 17:05:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-18 17:05:07 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-18 17:05:07 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-18 17:05:07 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 17:05:11 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 17:05:11 | DEBUG    | logging:callHandlers:1762 - Unable to get server version: [WinError 10061] No connection could be made because the target machine actively refused it, server version defaults to None
+2025-07-18 17:05:11 | INFO     | logging:callHandlers:1762 - Starting math dataset processing...
+2025-07-18 17:05:11 | WARNING  | logging:callHandlers:1762 - No JSON files found in raw data directory
+2025-07-18 17:05:11 | INFO     | logging:callHandlers:1762 - Creating sample dataset for demonstration
+2025-07-18 17:05:11 | INFO     | logging:callHandlers:1762 - Sample dataset created with 5 problems
+2025-07-18 17:05:11 | ERROR    | logging:callHandlers:1762 - Setup failed: 'MathDatasetProcessor' object has no attribute 'qdrant_client'
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 93, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000013ABB8EBE20>
+    │       └ <function run at 0x0000013AFBAA4040>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x0000013ABBCF2640>
+           │      └ <function Runner.run at 0x0000013AFBB23740>
+           └ <asyncio.runners.Runner object at 0x0000013ABBCE30B0>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:87> cb=[_...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000013AFBB213A0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000013ABBCE30B0>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000013AFBFED120>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000013AFBB23100>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000013AFBA71800>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000013ABBA7F190>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000013ABBA7F190>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000013ABBA7F190>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000013ABBA7F190>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 68, in main
+    print(f"🔍 Vector embeddings stored in Qdrant collection: {processor.qdrant_client._collection_name}")
+                                                              └ <app.utils.data_processor.MathDatasetProcessor object at 0x0000013ABBD1AE70>
+
+AttributeError: 'MathDatasetProcessor' object has no attribute 'qdrant_client'
+2025-07-18 17:10:28 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 17:10:28 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 17:10:28 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 17:10:28 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-18 17:10:28 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 17:10:28 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 17:10:29 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 17:10:29 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 17:10:29 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 17:10:29 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 17:10:29 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-18 17:10:29 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-18 17:10:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 17:10:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 17:10:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-18 17:10:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-18 17:10:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-18 17:10:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-18 17:10:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-18 17:10:31 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-18 17:10:31 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-18 17:10:32 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-18 17:10:32 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-18 17:10:32 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-18 17:10:33 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-18 17:10:33 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-18 17:10:33 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 17:10:37 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 17:10:37 | DEBUG    | logging:callHandlers:1762 - Unable to get server version: [WinError 10061] No connection could be made because the target machine actively refused it, server version defaults to None
+2025-07-18 17:10:37 | INFO     | logging:callHandlers:1762 - Starting math dataset processing...
+2025-07-18 17:10:37 | INFO     | logging:callHandlers:1762 - Found 239 JSON files to process
+2025-07-18 17:10:37 | INFO     | logging:callHandlers:1762 - Processed 0.json: 50 problems
+2025-07-18 17:10:37 | INFO     | logging:callHandlers:1762 - Processed 1.json: 50 problems
+2025-07-18 17:10:37 | INFO     | logging:callHandlers:1762 - Processed 10.json: 50 problems
+2025-07-18 17:10:38 | INFO     | logging:callHandlers:1762 - Processed 100.json: 50 problems
+2025-07-18 17:10:38 | INFO     | logging:callHandlers:1762 - Processed 101.json: 50 problems
+2025-07-18 17:10:39 | INFO     | logging:callHandlers:1762 - Processed 102.json: 50 problems
+2025-07-18 17:10:40 | INFO     | logging:callHandlers:1762 - Processed 103.json: 50 problems
+2025-07-18 17:10:40 | INFO     | logging:callHandlers:1762 - Processed 104.json: 50 problems
+2025-07-18 17:10:41 | INFO     | logging:callHandlers:1762 - Processed 105.json: 50 problems
+2025-07-18 17:10:41 | INFO     | logging:callHandlers:1762 - Processed 106.json: 50 problems
+2025-07-18 17:10:42 | INFO     | logging:callHandlers:1762 - Processed 107.json: 50 problems
+2025-07-18 17:10:42 | INFO     | logging:callHandlers:1762 - Processed 108.json: 50 problems
+2025-07-18 17:10:43 | INFO     | logging:callHandlers:1762 - Processed 109.json: 50 problems
+2025-07-18 17:10:43 | INFO     | logging:callHandlers:1762 - Processed 11.json: 50 problems
+2025-07-18 17:10:43 | INFO     | logging:callHandlers:1762 - Processed 110.json: 50 problems
+2025-07-18 17:10:44 | INFO     | logging:callHandlers:1762 - Processed 111.json: 50 problems
+2025-07-18 17:10:44 | INFO     | logging:callHandlers:1762 - Processed 112.json: 50 problems
+2025-07-18 17:10:45 | INFO     | logging:callHandlers:1762 - Processed 113.json: 50 problems
+2025-07-18 17:10:45 | INFO     | logging:callHandlers:1762 - Processed 114.json: 50 problems
+2025-07-18 17:10:46 | INFO     | logging:callHandlers:1762 - Processed 115.json: 50 problems
+2025-07-18 17:10:46 | INFO     | logging:callHandlers:1762 - Processed 116.json: 50 problems
+2025-07-18 17:10:47 | INFO     | logging:callHandlers:1762 - Processed 117.json: 50 problems
+2025-07-18 17:10:47 | INFO     | logging:callHandlers:1762 - Processed 118.json: 50 problems
+2025-07-18 17:10:48 | INFO     | logging:callHandlers:1762 - Processed 119.json: 50 problems
+2025-07-18 17:10:48 | INFO     | logging:callHandlers:1762 - Processed 12.json: 50 problems
+2025-07-18 17:10:49 | INFO     | logging:callHandlers:1762 - Processed 120.json: 50 problems
+2025-07-18 17:10:49 | INFO     | logging:callHandlers:1762 - Processed 121.json: 50 problems
+2025-07-18 17:10:50 | INFO     | logging:callHandlers:1762 - Processed 122.json: 50 problems
+2025-07-18 17:10:50 | INFO     | logging:callHandlers:1762 - Processed 123.json: 50 problems
+2025-07-18 17:10:51 | INFO     | logging:callHandlers:1762 - Processed 124.json: 50 problems
+2025-07-18 17:10:51 | INFO     | logging:callHandlers:1762 - Processed 125.json: 50 problems
+2025-07-18 17:10:52 | INFO     | logging:callHandlers:1762 - Processed 126.json: 50 problems
+2025-07-18 17:10:52 | INFO     | logging:callHandlers:1762 - Processed 127.json: 50 problems
+2025-07-18 17:10:53 | INFO     | logging:callHandlers:1762 - Processed 128.json: 50 problems
+2025-07-18 17:10:53 | INFO     | logging:callHandlers:1762 - Processed 129.json: 50 problems
+2025-07-18 17:10:53 | INFO     | logging:callHandlers:1762 - Processed 13.json: 50 problems
+2025-07-18 17:10:54 | INFO     | logging:callHandlers:1762 - Processed 130.json: 50 problems
+2025-07-18 17:10:55 | INFO     | logging:callHandlers:1762 - Processed 131.json: 50 problems
+2025-07-18 17:10:55 | INFO     | logging:callHandlers:1762 - Processed 132.json: 50 problems
+2025-07-18 17:10:56 | INFO     | logging:callHandlers:1762 - Processed 133.json: 50 problems
+2025-07-18 17:10:56 | INFO     | logging:callHandlers:1762 - Processed 134.json: 50 problems
+2025-07-18 17:10:57 | INFO     | logging:callHandlers:1762 - Processed 135.json: 50 problems
+2025-07-18 17:10:57 | INFO     | logging:callHandlers:1762 - Processed 136.json: 50 problems
+2025-07-18 17:10:58 | INFO     | logging:callHandlers:1762 - Processed 137.json: 50 problems
+2025-07-18 17:10:58 | INFO     | logging:callHandlers:1762 - Processed 138.json: 50 problems
+2025-07-18 17:10:59 | INFO     | logging:callHandlers:1762 - Processed 139.json: 50 problems
+2025-07-18 17:10:59 | INFO     | logging:callHandlers:1762 - Processed 14.json: 50 problems
+2025-07-18 17:11:00 | INFO     | logging:callHandlers:1762 - Processed 140.json: 50 problems
+2025-07-18 17:11:00 | INFO     | logging:callHandlers:1762 - Processed 141.json: 50 problems
+2025-07-18 17:11:01 | INFO     | logging:callHandlers:1762 - Processed 142.json: 50 problems
+2025-07-18 17:11:01 | INFO     | logging:callHandlers:1762 - Processed 143.json: 50 problems
+2025-07-18 17:11:02 | INFO     | logging:callHandlers:1762 - Processed 144.json: 50 problems
+2025-07-18 17:11:02 | INFO     | logging:callHandlers:1762 - Processed 145.json: 50 problems
+2025-07-18 17:11:03 | INFO     | logging:callHandlers:1762 - Processed 146.json: 50 problems
+2025-07-18 17:11:03 | INFO     | logging:callHandlers:1762 - Processed 147.json: 50 problems
+2025-07-18 17:11:04 | INFO     | logging:callHandlers:1762 - Processed 148.json: 50 problems
+2025-07-18 17:11:05 | INFO     | logging:callHandlers:1762 - Processed 149.json: 50 problems
+2025-07-18 17:11:05 | INFO     | logging:callHandlers:1762 - Processed 15.json: 50 problems
+2025-07-18 17:11:05 | INFO     | logging:callHandlers:1762 - Processed 150.json: 50 problems
+2025-07-18 17:11:06 | INFO     | logging:callHandlers:1762 - Processed 151.json: 50 problems
+2025-07-18 17:11:06 | INFO     | logging:callHandlers:1762 - Processed 152.json: 50 problems
+2025-07-18 17:11:07 | INFO     | logging:callHandlers:1762 - Processed 153.json: 50 problems
+2025-07-18 17:11:07 | INFO     | logging:callHandlers:1762 - Processed 154.json: 50 problems
+2025-07-18 17:11:08 | INFO     | logging:callHandlers:1762 - Processed 155.json: 50 problems
+2025-07-18 17:11:08 | INFO     | logging:callHandlers:1762 - Processed 156.json: 50 problems
+2025-07-18 17:11:09 | INFO     | logging:callHandlers:1762 - Processed 157.json: 50 problems
+2025-07-18 17:11:09 | INFO     | logging:callHandlers:1762 - Processed 158.json: 50 problems
+2025-07-18 17:11:10 | INFO     | logging:callHandlers:1762 - Processed 159.json: 50 problems
+2025-07-18 17:11:10 | INFO     | logging:callHandlers:1762 - Processed 16.json: 50 problems
+2025-07-18 17:11:10 | INFO     | logging:callHandlers:1762 - Processed 160.json: 50 problems
+2025-07-18 17:11:11 | INFO     | logging:callHandlers:1762 - Processed 161.json: 50 problems
+2025-07-18 17:11:11 | INFO     | logging:callHandlers:1762 - Processed 162.json: 50 problems
+2025-07-18 17:11:12 | INFO     | logging:callHandlers:1762 - Processed 163.json: 50 problems
+2025-07-18 17:11:12 | INFO     | logging:callHandlers:1762 - Processed 164.json: 50 problems
+2025-07-18 17:11:13 | INFO     | logging:callHandlers:1762 - Processed 165.json: 50 problems
+2025-07-18 17:11:13 | INFO     | logging:callHandlers:1762 - Processed 166.json: 50 problems
+2025-07-18 17:11:14 | INFO     | logging:callHandlers:1762 - Processed 167.json: 50 problems
+2025-07-18 17:11:14 | INFO     | logging:callHandlers:1762 - Processed 168.json: 50 problems
+2025-07-18 17:11:15 | INFO     | logging:callHandlers:1762 - Processed 169.json: 50 problems
+2025-07-18 17:11:15 | INFO     | logging:callHandlers:1762 - Processed 17.json: 50 problems
+2025-07-18 17:11:15 | INFO     | logging:callHandlers:1762 - Processed 170.json: 50 problems
+2025-07-18 17:11:16 | INFO     | logging:callHandlers:1762 - Processed 171.json: 50 problems
+2025-07-18 17:11:16 | INFO     | logging:callHandlers:1762 - Processed 172.json: 50 problems
+2025-07-18 17:11:17 | INFO     | logging:callHandlers:1762 - Processed 173.json: 50 problems
+2025-07-18 17:11:17 | INFO     | logging:callHandlers:1762 - Processed 174.json: 50 problems
+2025-07-18 17:11:18 | INFO     | logging:callHandlers:1762 - Processed 175.json: 50 problems
+2025-07-18 17:11:18 | INFO     | logging:callHandlers:1762 - Processed 176.json: 50 problems
+2025-07-18 17:11:19 | INFO     | logging:callHandlers:1762 - Processed 177.json: 50 problems
+2025-07-18 17:11:19 | INFO     | logging:callHandlers:1762 - Processed 178.json: 50 problems
+2025-07-18 17:11:20 | INFO     | logging:callHandlers:1762 - Processed 179.json: 50 problems
+2025-07-18 17:11:20 | INFO     | logging:callHandlers:1762 - Processed 18.json: 50 problems
+2025-07-18 17:11:20 | INFO     | logging:callHandlers:1762 - Processed 180.json: 50 problems
+2025-07-18 17:11:21 | INFO     | logging:callHandlers:1762 - Processed 181.json: 50 problems
+2025-07-18 17:11:21 | INFO     | logging:callHandlers:1762 - Processed 182.json: 50 problems
+2025-07-18 17:11:22 | INFO     | logging:callHandlers:1762 - Processed 183.json: 50 problems
+2025-07-18 17:11:23 | INFO     | logging:callHandlers:1762 - Processed 184.json: 50 problems
+2025-07-18 17:11:23 | INFO     | logging:callHandlers:1762 - Processed 185.json: 50 problems
+2025-07-18 17:11:24 | INFO     | logging:callHandlers:1762 - Processed 186.json: 50 problems
+2025-07-18 17:11:24 | INFO     | logging:callHandlers:1762 - Processed 187.json: 50 problems
+2025-07-18 17:11:25 | INFO     | logging:callHandlers:1762 - Processed 188.json: 50 problems
+2025-07-18 17:11:25 | INFO     | logging:callHandlers:1762 - Processed 189.json: 50 problems
+2025-07-18 17:11:25 | INFO     | logging:callHandlers:1762 - Processed 19.json: 50 problems
+2025-07-18 17:11:26 | INFO     | logging:callHandlers:1762 - Processed 190.json: 50 problems
+2025-07-18 17:11:26 | INFO     | logging:callHandlers:1762 - Processed 191.json: 50 problems
+2025-07-18 17:11:27 | INFO     | logging:callHandlers:1762 - Processed 192.json: 50 problems
+2025-07-18 17:11:27 | INFO     | logging:callHandlers:1762 - Processed 193.json: 50 problems
+2025-07-18 17:11:28 | INFO     | logging:callHandlers:1762 - Processed 194.json: 50 problems
+2025-07-18 17:11:28 | INFO     | logging:callHandlers:1762 - Processed 195.json: 50 problems
+2025-07-18 17:11:29 | INFO     | logging:callHandlers:1762 - Processed 196.json: 50 problems
+2025-07-18 17:11:29 | INFO     | logging:callHandlers:1762 - Processed 197.json: 50 problems
+2025-07-18 17:11:30 | INFO     | logging:callHandlers:1762 - Processed 198.json: 50 problems
+2025-07-18 17:11:30 | INFO     | logging:callHandlers:1762 - Processed 199.json: 50 problems
+2025-07-18 17:11:30 | INFO     | logging:callHandlers:1762 - Processed 2.json: 50 problems
+2025-07-18 17:11:30 | INFO     | logging:callHandlers:1762 - Processed 20.json: 50 problems
+2025-07-18 17:11:31 | INFO     | logging:callHandlers:1762 - Processed 200.json: 50 problems
+2025-07-18 17:11:31 | INFO     | logging:callHandlers:1762 - Processed 201.json: 50 problems
+2025-07-18 17:11:32 | INFO     | logging:callHandlers:1762 - Processed 202.json: 50 problems
+2025-07-18 17:11:32 | INFO     | logging:callHandlers:1762 - Processed 203.json: 50 problems
+2025-07-18 17:11:33 | INFO     | logging:callHandlers:1762 - Processed 204.json: 50 problems
+2025-07-18 17:11:33 | INFO     | logging:callHandlers:1762 - Processed 205.json: 50 problems
+2025-07-18 17:11:34 | INFO     | logging:callHandlers:1762 - Processed 206.json: 50 problems
+2025-07-18 17:11:34 | INFO     | logging:callHandlers:1762 - Processed 207.json: 50 problems
+2025-07-18 17:11:35 | INFO     | logging:callHandlers:1762 - Processed 208.json: 50 problems
+2025-07-18 17:11:35 | INFO     | logging:callHandlers:1762 - Processed 209.json: 50 problems
+2025-07-18 17:11:35 | INFO     | logging:callHandlers:1762 - Processed 21.json: 50 problems
+2025-07-18 17:11:36 | INFO     | logging:callHandlers:1762 - Processed 210.json: 50 problems
+2025-07-18 17:11:36 | INFO     | logging:callHandlers:1762 - Processed 211.json: 50 problems
+2025-07-18 17:11:37 | INFO     | logging:callHandlers:1762 - Processed 212.json: 50 problems
+2025-07-18 17:11:37 | INFO     | logging:callHandlers:1762 - Processed 213.json: 50 problems
+2025-07-18 17:11:38 | INFO     | logging:callHandlers:1762 - Processed 214.json: 50 problems
+2025-07-18 17:11:38 | INFO     | logging:callHandlers:1762 - Processed 215.json: 50 problems
+2025-07-18 17:11:39 | INFO     | logging:callHandlers:1762 - Processed 216.json: 50 problems
+2025-07-18 17:11:39 | INFO     | logging:callHandlers:1762 - Processed 217.json: 50 problems
+2025-07-18 17:11:40 | INFO     | logging:callHandlers:1762 - Processed 218.json: 50 problems
+2025-07-18 17:11:40 | INFO     | logging:callHandlers:1762 - Processed 219.json: 50 problems
+2025-07-18 17:11:40 | INFO     | logging:callHandlers:1762 - Processed 22.json: 50 problems
+2025-07-18 17:11:41 | INFO     | logging:callHandlers:1762 - Processed 220.json: 50 problems
+2025-07-18 17:11:41 | INFO     | logging:callHandlers:1762 - Processed 221.json: 50 problems
+2025-07-18 17:11:42 | INFO     | logging:callHandlers:1762 - Processed 222.json: 50 problems
+2025-07-18 17:11:42 | INFO     | logging:callHandlers:1762 - Processed 223.json: 50 problems
+2025-07-18 17:11:43 | INFO     | logging:callHandlers:1762 - Processed 224.json: 50 problems
+2025-07-18 17:11:43 | INFO     | logging:callHandlers:1762 - Processed 225.json: 50 problems
+2025-07-18 17:11:44 | INFO     | logging:callHandlers:1762 - Processed 226.json: 50 problems
+2025-07-18 17:11:44 | INFO     | logging:callHandlers:1762 - Processed 227.json: 50 problems
+2025-07-18 17:11:44 | INFO     | logging:callHandlers:1762 - Processed 228.json: 50 problems
+2025-07-18 17:11:45 | INFO     | logging:callHandlers:1762 - Processed 229.json: 50 problems
+2025-07-18 17:11:45 | INFO     | logging:callHandlers:1762 - Processed 23.json: 50 problems
+2025-07-18 17:11:45 | INFO     | logging:callHandlers:1762 - Processed 230.json: 50 problems
+2025-07-18 17:11:46 | INFO     | logging:callHandlers:1762 - Processed 231.json: 50 problems
+2025-07-18 17:11:46 | INFO     | logging:callHandlers:1762 - Processed 232.json: 50 problems
+2025-07-18 17:11:47 | INFO     | logging:callHandlers:1762 - Processed 233.json: 50 problems
+2025-07-18 17:11:47 | INFO     | logging:callHandlers:1762 - Processed 234.json: 50 problems
+2025-07-18 17:11:48 | INFO     | logging:callHandlers:1762 - Processed 235.json: 50 problems
+2025-07-18 17:11:48 | INFO     | logging:callHandlers:1762 - Processed 236.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 237.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 238.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 24.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 25.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 26.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 27.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 28.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 29.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 3.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 30.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 31.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 32.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 33.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 34.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 35.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 36.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 37.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 38.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 39.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 4.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 40.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 41.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 42.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 43.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 44.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 45.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 46.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 47.json: 50 problems
+2025-07-18 17:11:49 | INFO     | logging:callHandlers:1762 - Processed 48.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 49.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 5.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 50.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 51.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 52.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 53.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 54.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 55.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 56.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 57.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 58.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 59.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 6.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 60.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 61.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 62.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 63.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 64.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 65.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 66.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 67.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 68.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 69.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 7.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 70.json: 50 problems
+2025-07-18 17:11:50 | INFO     | logging:callHandlers:1762 - Processed 71.json: 50 problems
+2025-07-18 17:11:51 | INFO     | logging:callHandlers:1762 - Processed 72.json: 50 problems
+2025-07-18 17:11:51 | INFO     | logging:callHandlers:1762 - Processed 73.json: 50 problems
+2025-07-18 17:11:52 | INFO     | logging:callHandlers:1762 - Processed 74.json: 50 problems
+2025-07-18 17:11:52 | INFO     | logging:callHandlers:1762 - Processed 75.json: 50 problems
+2025-07-18 17:11:53 | INFO     | logging:callHandlers:1762 - Processed 76.json: 50 problems
+2025-07-18 17:11:53 | INFO     | logging:callHandlers:1762 - Processed 77.json: 50 problems
+2025-07-18 17:11:54 | INFO     | logging:callHandlers:1762 - Processed 78.json: 50 problems
+2025-07-18 17:11:54 | INFO     | logging:callHandlers:1762 - Processed 79.json: 50 problems
+2025-07-18 17:11:54 | INFO     | logging:callHandlers:1762 - Processed 8.json: 50 problems
+2025-07-18 17:11:55 | INFO     | logging:callHandlers:1762 - Processed 80.json: 50 problems
+2025-07-18 17:11:55 | INFO     | logging:callHandlers:1762 - Processed 81.json: 50 problems
+2025-07-18 17:11:56 | INFO     | logging:callHandlers:1762 - Processed 82.json: 50 problems
+2025-07-18 17:11:56 | INFO     | logging:callHandlers:1762 - Processed 83.json: 50 problems
+2025-07-18 17:11:57 | INFO     | logging:callHandlers:1762 - Processed 84.json: 50 problems
+2025-07-18 17:11:57 | INFO     | logging:callHandlers:1762 - Processed 85.json: 50 problems
+2025-07-18 17:11:58 | INFO     | logging:callHandlers:1762 - Processed 86.json: 50 problems
+2025-07-18 17:11:58 | INFO     | logging:callHandlers:1762 - Processed 87.json: 50 problems
+2025-07-18 17:11:59 | INFO     | logging:callHandlers:1762 - Processed 88.json: 50 problems
+2025-07-18 17:11:59 | INFO     | logging:callHandlers:1762 - Processed 89.json: 50 problems
+2025-07-18 17:11:59 | INFO     | logging:callHandlers:1762 - Processed 9.json: 50 problems
+2025-07-18 17:12:00 | INFO     | logging:callHandlers:1762 - Processed 90.json: 50 problems
+2025-07-18 17:12:00 | INFO     | logging:callHandlers:1762 - Processed 91.json: 50 problems
+2025-07-18 17:12:01 | INFO     | logging:callHandlers:1762 - Processed 92.json: 50 problems
+2025-07-18 17:12:01 | INFO     | logging:callHandlers:1762 - Processed 93.json: 50 problems
+2025-07-18 17:12:02 | INFO     | logging:callHandlers:1762 - Processed 94.json: 50 problems
+2025-07-18 17:12:02 | INFO     | logging:callHandlers:1762 - Processed 95.json: 50 problems
+2025-07-18 17:12:03 | INFO     | logging:callHandlers:1762 - Processed 96.json: 50 problems
+2025-07-18 17:12:03 | INFO     | logging:callHandlers:1762 - Processed 97.json: 50 problems
+2025-07-18 17:12:03 | INFO     | logging:callHandlers:1762 - Processed 98.json: 50 problems
+2025-07-18 17:12:04 | INFO     | logging:callHandlers:1762 - Processed 99.json: 50 problems
+2025-07-18 17:12:04 | INFO     | logging:callHandlers:1762 - Total problems processed: 11950
+2025-07-18 17:12:04 | INFO     | logging:callHandlers:1762 - Generating embeddings for vector search...
+2025-07-18 17:14:32 | ERROR    | logging:callHandlers:1762 - Error generating embeddings: asyncio.run() cannot be called from a running event loop
+2025-07-18 17:14:32 | INFO     | logging:callHandlers:1762 - Dataset processing complete. Saved to D:\ai_Planet\math_agent\backend\data\processed\processed_math_problems.json
+2025-07-18 17:14:32 | ERROR    | logging:callHandlers:1762 - Setup failed: 'MathDatasetProcessor' object has no attribute 'qdrant_client'
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 93, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000002663A45BE20>
+    │       └ <function run at 0x000002667A614040>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000002663A862640>
+           │      └ <function Runner.run at 0x000002667A693740>
+           └ <asyncio.runners.Runner object at 0x000002663A8531A0>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:87> cb=[_...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002667A6913A0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000002663A8531A0>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000002667AB5D120>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002667A693100>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002667A5E1800>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000266359A9C60>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000266359A9C60>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000266359A9C60>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000266359A9C60>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 68, in main
+    print(f"🔍 Vector embeddings stored in Qdrant collection: {processor.qdrant_client._collection_name}")
+                                                              └ <app.utils.data_processor.MathDatasetProcessor object at 0x000002663A88AEA0>
+
+AttributeError: 'MathDatasetProcessor' object has no attribute 'qdrant_client'
+2025-07-18 17:50:59 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 17:50:59 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 17:50:59 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 17:50:59 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-18 17:51:00 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 17:51:00 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 17:51:00 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 17:51:00 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 17:51:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 17:51:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 17:51:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-18 17:51:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-18 17:51:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 17:51:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 17:51:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-18 17:51:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-18 17:51:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-18 17:51:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-18 17:51:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-18 17:51:05 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-18 17:51:05 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-18 17:51:05 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-18 17:51:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-18 17:51:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-18 17:51:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-18 17:51:06 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-18 17:51:07 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 17:51:11 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 17:51:11 | DEBUG    | logging:callHandlers:1762 - Unable to get server version: [WinError 10061] No connection could be made because the target machine actively refused it, server version defaults to None
+2025-07-18 17:51:11 | ERROR    | logging:callHandlers:1762 - Setup failed: object of type 'coroutine' has no len()
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 93, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001FC01847D80>
+    │       └ <function run at 0x000001FC419B4040>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000001FC01C52640>
+           │      └ <function Runner.run at 0x000001FC41A33740>
+           └ <asyncio.runners.Runner object at 0x000001FC01C3F050>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:87> cb=[_...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000001FC41A313A0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000001FC01C3F050>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001FC41F0D120>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001FC41A33100>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001FC4197D800>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001FC01BC77C0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001FC01BC77C0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001FC01BC77C0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001FC01BC77C0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 65, in main
+    print(f"\n✅ Successfully processed {len(processed_problems)} problems!")
+                                            └ <coroutine object MathDatasetProcessor.process_complete_dataset at 0x000001FC032CFD80>
+
+TypeError: object of type 'coroutine' has no len()
+2025-07-18 17:57:45 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 17:57:45 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 17:57:45 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 17:57:45 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-18 17:57:46 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 17:57:46 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 17:57:46 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 17:57:46 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 17:57:46 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 17:57:46 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 17:57:46 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-18 17:57:46 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-18 17:57:47 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 17:57:47 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 17:57:47 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-18 17:57:47 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-18 17:57:47 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-18 17:57:48 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-18 17:57:48 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-18 17:57:50 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-18 17:57:50 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-18 17:57:50 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-18 17:57:50 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-18 17:57:50 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-18 17:57:51 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-18 17:57:51 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-18 17:57:52 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 17:57:56 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 17:57:56 | DEBUG    | logging:callHandlers:1762 - Unable to get server version: [WinError 10061] No connection could be made because the target machine actively refused it, server version defaults to None
+2025-07-18 17:57:56 | INFO     | logging:callHandlers:1762 - Processed 0.json: 50 problems
+2025-07-18 17:57:56 | INFO     | logging:callHandlers:1762 - Processed 1.json: 50 problems
+2025-07-18 17:57:56 | INFO     | logging:callHandlers:1762 - Processed 10.json: 50 problems
+2025-07-18 17:57:57 | INFO     | logging:callHandlers:1762 - Processed 100.json: 50 problems
+2025-07-18 17:57:58 | INFO     | logging:callHandlers:1762 - Processed 101.json: 50 problems
+2025-07-18 17:57:59 | INFO     | logging:callHandlers:1762 - Processed 102.json: 50 problems
+2025-07-18 17:58:00 | INFO     | logging:callHandlers:1762 - Processed 103.json: 50 problems
+2025-07-18 17:58:01 | INFO     | logging:callHandlers:1762 - Processed 104.json: 50 problems
+2025-07-18 17:58:02 | INFO     | logging:callHandlers:1762 - Processed 105.json: 50 problems
+2025-07-18 17:58:02 | INFO     | logging:callHandlers:1762 - Processed 106.json: 50 problems
+2025-07-18 17:58:03 | INFO     | logging:callHandlers:1762 - Processed 107.json: 50 problems
+2025-07-18 17:58:04 | INFO     | logging:callHandlers:1762 - Processed 108.json: 50 problems
+2025-07-18 17:58:05 | INFO     | logging:callHandlers:1762 - Processed 109.json: 50 problems
+2025-07-18 17:58:05 | INFO     | logging:callHandlers:1762 - Processed 11.json: 50 problems
+2025-07-18 17:58:06 | INFO     | logging:callHandlers:1762 - Processed 110.json: 50 problems
+2025-07-18 17:58:07 | INFO     | logging:callHandlers:1762 - Processed 111.json: 50 problems
+2025-07-18 17:58:07 | INFO     | logging:callHandlers:1762 - Processed 112.json: 50 problems
+2025-07-18 17:58:08 | INFO     | logging:callHandlers:1762 - Processed 113.json: 50 problems
+2025-07-18 17:58:08 | INFO     | logging:callHandlers:1762 - Processed 114.json: 50 problems
+2025-07-18 17:58:09 | INFO     | logging:callHandlers:1762 - Processed 115.json: 50 problems
+2025-07-18 17:58:10 | INFO     | logging:callHandlers:1762 - Processed 116.json: 50 problems
+2025-07-18 17:58:10 | INFO     | logging:callHandlers:1762 - Processed 117.json: 50 problems
+2025-07-18 17:58:11 | INFO     | logging:callHandlers:1762 - Processed 118.json: 50 problems
+2025-07-18 17:58:11 | INFO     | logging:callHandlers:1762 - Processed 119.json: 50 problems
+2025-07-18 17:58:11 | INFO     | logging:callHandlers:1762 - Processed 12.json: 50 problems
+2025-07-18 17:58:12 | INFO     | logging:callHandlers:1762 - Processed 120.json: 50 problems
+2025-07-18 17:58:13 | INFO     | logging:callHandlers:1762 - Processed 121.json: 50 problems
+2025-07-18 17:58:13 | INFO     | logging:callHandlers:1762 - Processed 122.json: 50 problems
+2025-07-18 17:58:14 | INFO     | logging:callHandlers:1762 - Processed 123.json: 50 problems
+2025-07-18 17:58:15 | INFO     | logging:callHandlers:1762 - Processed 124.json: 50 problems
+2025-07-18 17:58:15 | INFO     | logging:callHandlers:1762 - Processed 125.json: 50 problems
+2025-07-18 17:58:16 | INFO     | logging:callHandlers:1762 - Processed 126.json: 50 problems
+2025-07-18 17:58:17 | INFO     | logging:callHandlers:1762 - Processed 127.json: 50 problems
+2025-07-18 17:58:17 | INFO     | logging:callHandlers:1762 - Processed 128.json: 50 problems
+2025-07-18 17:58:18 | INFO     | logging:callHandlers:1762 - Processed 129.json: 50 problems
+2025-07-18 17:58:18 | INFO     | logging:callHandlers:1762 - Processed 13.json: 50 problems
+2025-07-18 17:58:19 | INFO     | logging:callHandlers:1762 - Processed 130.json: 50 problems
+2025-07-18 17:58:19 | INFO     | logging:callHandlers:1762 - Processed 131.json: 50 problems
+2025-07-18 17:58:20 | INFO     | logging:callHandlers:1762 - Processed 132.json: 50 problems
+2025-07-18 17:58:20 | INFO     | logging:callHandlers:1762 - Processed 133.json: 50 problems
+2025-07-18 17:58:21 | INFO     | logging:callHandlers:1762 - Processed 134.json: 50 problems
+2025-07-18 17:58:22 | INFO     | logging:callHandlers:1762 - Processed 135.json: 50 problems
+2025-07-18 17:58:22 | INFO     | logging:callHandlers:1762 - Processed 136.json: 50 problems
+2025-07-18 17:58:23 | INFO     | logging:callHandlers:1762 - Processed 137.json: 50 problems
+2025-07-18 17:58:24 | INFO     | logging:callHandlers:1762 - Processed 138.json: 50 problems
+2025-07-18 17:58:24 | INFO     | logging:callHandlers:1762 - Processed 139.json: 50 problems
+2025-07-18 17:58:24 | INFO     | logging:callHandlers:1762 - Processed 14.json: 50 problems
+2025-07-18 17:58:25 | INFO     | logging:callHandlers:1762 - Processed 140.json: 50 problems
+2025-07-18 17:58:26 | INFO     | logging:callHandlers:1762 - Processed 141.json: 50 problems
+2025-07-18 17:58:26 | INFO     | logging:callHandlers:1762 - Processed 142.json: 50 problems
+2025-07-18 17:58:27 | INFO     | logging:callHandlers:1762 - Processed 143.json: 50 problems
+2025-07-18 17:58:28 | INFO     | logging:callHandlers:1762 - Processed 144.json: 50 problems
+2025-07-18 17:58:29 | INFO     | logging:callHandlers:1762 - Processed 145.json: 50 problems
+2025-07-18 17:58:29 | INFO     | logging:callHandlers:1762 - Processed 146.json: 50 problems
+2025-07-18 17:58:30 | INFO     | logging:callHandlers:1762 - Processed 147.json: 50 problems
+2025-07-18 17:58:31 | INFO     | logging:callHandlers:1762 - Processed 148.json: 50 problems
+2025-07-18 17:58:31 | INFO     | logging:callHandlers:1762 - Processed 149.json: 50 problems
+2025-07-18 17:58:31 | INFO     | logging:callHandlers:1762 - Processed 15.json: 50 problems
+2025-07-18 17:58:32 | INFO     | logging:callHandlers:1762 - Processed 150.json: 50 problems
+2025-07-18 17:58:33 | INFO     | logging:callHandlers:1762 - Processed 151.json: 50 problems
+2025-07-18 17:58:33 | INFO     | logging:callHandlers:1762 - Processed 152.json: 50 problems
+2025-07-18 17:58:34 | INFO     | logging:callHandlers:1762 - Processed 153.json: 50 problems
+2025-07-18 17:58:34 | INFO     | logging:callHandlers:1762 - Processed 154.json: 50 problems
+2025-07-18 17:58:35 | INFO     | logging:callHandlers:1762 - Processed 155.json: 50 problems
+2025-07-18 17:58:36 | INFO     | logging:callHandlers:1762 - Processed 156.json: 50 problems
+2025-07-18 17:58:36 | INFO     | logging:callHandlers:1762 - Processed 157.json: 50 problems
+2025-07-18 17:58:37 | INFO     | logging:callHandlers:1762 - Processed 158.json: 50 problems
+2025-07-18 17:58:38 | INFO     | logging:callHandlers:1762 - Processed 159.json: 50 problems
+2025-07-18 17:58:38 | INFO     | logging:callHandlers:1762 - Processed 16.json: 50 problems
+2025-07-18 17:58:38 | INFO     | logging:callHandlers:1762 - Processed 160.json: 50 problems
+2025-07-18 17:58:39 | INFO     | logging:callHandlers:1762 - Processed 161.json: 50 problems
+2025-07-18 17:58:40 | INFO     | logging:callHandlers:1762 - Processed 162.json: 50 problems
+2025-07-18 17:58:40 | INFO     | logging:callHandlers:1762 - Processed 163.json: 50 problems
+2025-07-18 17:58:41 | INFO     | logging:callHandlers:1762 - Processed 164.json: 50 problems
+2025-07-18 17:58:41 | INFO     | logging:callHandlers:1762 - Processed 165.json: 50 problems
+2025-07-18 17:58:42 | INFO     | logging:callHandlers:1762 - Processed 166.json: 50 problems
+2025-07-18 17:58:43 | INFO     | logging:callHandlers:1762 - Processed 167.json: 50 problems
+2025-07-18 17:58:43 | INFO     | logging:callHandlers:1762 - Processed 168.json: 50 problems
+2025-07-18 17:58:44 | INFO     | logging:callHandlers:1762 - Processed 169.json: 50 problems
+2025-07-18 17:58:44 | INFO     | logging:callHandlers:1762 - Processed 17.json: 50 problems
+2025-07-18 17:58:45 | INFO     | logging:callHandlers:1762 - Processed 170.json: 50 problems
+2025-07-18 17:58:45 | INFO     | logging:callHandlers:1762 - Processed 171.json: 50 problems
+2025-07-18 17:58:46 | INFO     | logging:callHandlers:1762 - Processed 172.json: 50 problems
+2025-07-18 17:58:46 | INFO     | logging:callHandlers:1762 - Processed 173.json: 50 problems
+2025-07-18 17:58:47 | INFO     | logging:callHandlers:1762 - Processed 174.json: 50 problems
+2025-07-18 17:58:48 | INFO     | logging:callHandlers:1762 - Processed 175.json: 50 problems
+2025-07-18 17:58:48 | INFO     | logging:callHandlers:1762 - Processed 176.json: 50 problems
+2025-07-18 17:58:49 | INFO     | logging:callHandlers:1762 - Processed 177.json: 50 problems
+2025-07-18 17:58:49 | INFO     | logging:callHandlers:1762 - Processed 178.json: 50 problems
+2025-07-18 17:58:50 | INFO     | logging:callHandlers:1762 - Processed 179.json: 50 problems
+2025-07-18 17:58:50 | INFO     | logging:callHandlers:1762 - Processed 18.json: 50 problems
+2025-07-18 17:58:51 | INFO     | logging:callHandlers:1762 - Processed 180.json: 50 problems
+2025-07-18 17:58:51 | INFO     | logging:callHandlers:1762 - Processed 181.json: 50 problems
+2025-07-18 17:58:52 | INFO     | logging:callHandlers:1762 - Processed 182.json: 50 problems
+2025-07-18 17:58:53 | INFO     | logging:callHandlers:1762 - Processed 183.json: 50 problems
+2025-07-18 17:58:53 | INFO     | logging:callHandlers:1762 - Processed 184.json: 50 problems
+2025-07-18 17:58:54 | INFO     | logging:callHandlers:1762 - Processed 185.json: 50 problems
+2025-07-18 17:58:55 | INFO     | logging:callHandlers:1762 - Processed 186.json: 50 problems
+2025-07-18 17:58:55 | INFO     | logging:callHandlers:1762 - Processed 187.json: 50 problems
+2025-07-18 17:58:56 | INFO     | logging:callHandlers:1762 - Processed 188.json: 50 problems
+2025-07-18 17:58:56 | INFO     | logging:callHandlers:1762 - Processed 189.json: 50 problems
+2025-07-18 17:58:56 | INFO     | logging:callHandlers:1762 - Processed 19.json: 50 problems
+2025-07-18 17:58:57 | INFO     | logging:callHandlers:1762 - Processed 190.json: 50 problems
+2025-07-18 17:58:58 | INFO     | logging:callHandlers:1762 - Processed 191.json: 50 problems
+2025-07-18 17:58:58 | INFO     | logging:callHandlers:1762 - Processed 192.json: 50 problems
+2025-07-18 17:58:59 | INFO     | logging:callHandlers:1762 - Processed 193.json: 50 problems
+2025-07-18 17:59:00 | INFO     | logging:callHandlers:1762 - Processed 194.json: 50 problems
+2025-07-18 17:59:01 | INFO     | logging:callHandlers:1762 - Processed 195.json: 50 problems
+2025-07-18 17:59:01 | INFO     | logging:callHandlers:1762 - Processed 196.json: 50 problems
+2025-07-18 17:59:02 | INFO     | logging:callHandlers:1762 - Processed 197.json: 50 problems
+2025-07-18 17:59:02 | INFO     | logging:callHandlers:1762 - Processed 198.json: 50 problems
+2025-07-18 17:59:03 | INFO     | logging:callHandlers:1762 - Processed 199.json: 50 problems
+2025-07-18 17:59:03 | INFO     | logging:callHandlers:1762 - Processed 2.json: 50 problems
+2025-07-18 17:59:03 | INFO     | logging:callHandlers:1762 - Processed 20.json: 50 problems
+2025-07-18 17:59:04 | INFO     | logging:callHandlers:1762 - Processed 200.json: 50 problems
+2025-07-18 17:59:04 | INFO     | logging:callHandlers:1762 - Processed 201.json: 50 problems
+2025-07-18 17:59:05 | INFO     | logging:callHandlers:1762 - Processed 202.json: 50 problems
+2025-07-18 17:59:05 | INFO     | logging:callHandlers:1762 - Processed 203.json: 50 problems
+2025-07-18 17:59:06 | INFO     | logging:callHandlers:1762 - Processed 204.json: 50 problems
+2025-07-18 17:59:07 | INFO     | logging:callHandlers:1762 - Processed 205.json: 50 problems
+2025-07-18 17:59:07 | INFO     | logging:callHandlers:1762 - Processed 206.json: 50 problems
+2025-07-18 17:59:08 | INFO     | logging:callHandlers:1762 - Processed 207.json: 50 problems
+2025-07-18 17:59:08 | INFO     | logging:callHandlers:1762 - Processed 208.json: 50 problems
+2025-07-18 17:59:09 | INFO     | logging:callHandlers:1762 - Processed 209.json: 50 problems
+2025-07-18 17:59:09 | INFO     | logging:callHandlers:1762 - Processed 21.json: 50 problems
+2025-07-18 17:59:09 | INFO     | logging:callHandlers:1762 - Processed 210.json: 50 problems
+2025-07-18 17:59:10 | INFO     | logging:callHandlers:1762 - Processed 211.json: 50 problems
+2025-07-18 17:59:11 | INFO     | logging:callHandlers:1762 - Processed 212.json: 50 problems
+2025-07-18 17:59:11 | INFO     | logging:callHandlers:1762 - Processed 213.json: 50 problems
+2025-07-18 17:59:12 | INFO     | logging:callHandlers:1762 - Processed 214.json: 50 problems
+2025-07-18 17:59:13 | INFO     | logging:callHandlers:1762 - Processed 215.json: 50 problems
+2025-07-18 17:59:13 | INFO     | logging:callHandlers:1762 - Processed 216.json: 50 problems
+2025-07-18 17:59:14 | INFO     | logging:callHandlers:1762 - Processed 217.json: 50 problems
+2025-07-18 17:59:14 | INFO     | logging:callHandlers:1762 - Processed 218.json: 50 problems
+2025-07-18 17:59:15 | INFO     | logging:callHandlers:1762 - Processed 219.json: 50 problems
+2025-07-18 17:59:15 | INFO     | logging:callHandlers:1762 - Processed 22.json: 50 problems
+2025-07-18 17:59:15 | INFO     | logging:callHandlers:1762 - Processed 220.json: 50 problems
+2025-07-18 17:59:16 | INFO     | logging:callHandlers:1762 - Processed 221.json: 50 problems
+2025-07-18 17:59:17 | INFO     | logging:callHandlers:1762 - Processed 222.json: 50 problems
+2025-07-18 17:59:17 | INFO     | logging:callHandlers:1762 - Processed 223.json: 50 problems
+2025-07-18 17:59:18 | INFO     | logging:callHandlers:1762 - Processed 224.json: 50 problems
+2025-07-18 17:59:18 | INFO     | logging:callHandlers:1762 - Processed 225.json: 50 problems
+2025-07-18 17:59:19 | INFO     | logging:callHandlers:1762 - Processed 226.json: 50 problems
+2025-07-18 17:59:19 | INFO     | logging:callHandlers:1762 - Processed 227.json: 50 problems
+2025-07-18 17:59:20 | INFO     | logging:callHandlers:1762 - Processed 228.json: 50 problems
+2025-07-18 17:59:20 | INFO     | logging:callHandlers:1762 - Processed 229.json: 50 problems
+2025-07-18 17:59:21 | INFO     | logging:callHandlers:1762 - Processed 23.json: 50 problems
+2025-07-18 17:59:21 | INFO     | logging:callHandlers:1762 - Processed 230.json: 50 problems
+2025-07-18 17:59:22 | INFO     | logging:callHandlers:1762 - Processed 231.json: 50 problems
+2025-07-18 17:59:22 | INFO     | logging:callHandlers:1762 - Processed 232.json: 50 problems
+2025-07-18 17:59:23 | INFO     | logging:callHandlers:1762 - Processed 233.json: 50 problems
+2025-07-18 17:59:23 | INFO     | logging:callHandlers:1762 - Processed 234.json: 50 problems
+2025-07-18 17:59:24 | INFO     | logging:callHandlers:1762 - Processed 235.json: 50 problems
+2025-07-18 17:59:25 | INFO     | logging:callHandlers:1762 - Processed 236.json: 50 problems
+2025-07-18 17:59:25 | INFO     | logging:callHandlers:1762 - Processed 237.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 238.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 24.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 25.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 26.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 27.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 28.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 29.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 3.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 30.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 31.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 32.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 33.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 34.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 35.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 36.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 37.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 38.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 39.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 4.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 40.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 41.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 42.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 43.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 44.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 45.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 46.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 47.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 48.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 49.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 5.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 50.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 51.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 52.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 53.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 54.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 55.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 56.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 57.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 58.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 59.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 6.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 60.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 61.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 62.json: 50 problems
+2025-07-18 17:59:26 | INFO     | logging:callHandlers:1762 - Processed 63.json: 50 problems
+2025-07-18 17:59:27 | INFO     | logging:callHandlers:1762 - Processed 64.json: 50 problems
+2025-07-18 17:59:27 | INFO     | logging:callHandlers:1762 - Processed 65.json: 50 problems
+2025-07-18 17:59:27 | INFO     | logging:callHandlers:1762 - Processed 66.json: 50 problems
+2025-07-18 17:59:27 | INFO     | logging:callHandlers:1762 - Processed 67.json: 50 problems
+2025-07-18 17:59:27 | INFO     | logging:callHandlers:1762 - Processed 68.json: 50 problems
+2025-07-18 17:59:27 | INFO     | logging:callHandlers:1762 - Processed 69.json: 50 problems
+2025-07-18 17:59:27 | INFO     | logging:callHandlers:1762 - Processed 7.json: 50 problems
+2025-07-18 17:59:27 | INFO     | logging:callHandlers:1762 - Processed 70.json: 50 problems
+2025-07-18 17:59:27 | INFO     | logging:callHandlers:1762 - Processed 71.json: 50 problems
+2025-07-18 17:59:28 | INFO     | logging:callHandlers:1762 - Processed 72.json: 50 problems
+2025-07-18 17:59:29 | INFO     | logging:callHandlers:1762 - Processed 73.json: 50 problems
+2025-07-18 17:59:29 | INFO     | logging:callHandlers:1762 - Processed 74.json: 50 problems
+2025-07-18 17:59:30 | INFO     | logging:callHandlers:1762 - Processed 75.json: 50 problems
+2025-07-18 17:59:31 | INFO     | logging:callHandlers:1762 - Processed 76.json: 50 problems
+2025-07-18 17:59:31 | INFO     | logging:callHandlers:1762 - Processed 77.json: 50 problems
+2025-07-18 17:59:32 | INFO     | logging:callHandlers:1762 - Processed 78.json: 50 problems
+2025-07-18 17:59:32 | INFO     | logging:callHandlers:1762 - Processed 79.json: 50 problems
+2025-07-18 17:59:32 | INFO     | logging:callHandlers:1762 - Processed 8.json: 50 problems
+2025-07-18 17:59:33 | INFO     | logging:callHandlers:1762 - Processed 80.json: 50 problems
+2025-07-18 17:59:33 | INFO     | logging:callHandlers:1762 - Processed 81.json: 50 problems
+2025-07-18 17:59:34 | INFO     | logging:callHandlers:1762 - Processed 82.json: 50 problems
+2025-07-18 17:59:35 | INFO     | logging:callHandlers:1762 - Processed 83.json: 50 problems
+2025-07-18 17:59:35 | INFO     | logging:callHandlers:1762 - Processed 84.json: 50 problems
+2025-07-18 17:59:36 | INFO     | logging:callHandlers:1762 - Processed 85.json: 50 problems
+2025-07-18 17:59:36 | INFO     | logging:callHandlers:1762 - Processed 86.json: 50 problems
+2025-07-18 17:59:37 | INFO     | logging:callHandlers:1762 - Processed 87.json: 50 problems
+2025-07-18 17:59:37 | INFO     | logging:callHandlers:1762 - Processed 88.json: 50 problems
+2025-07-18 17:59:38 | INFO     | logging:callHandlers:1762 - Processed 89.json: 50 problems
+2025-07-18 17:59:38 | INFO     | logging:callHandlers:1762 - Processed 9.json: 50 problems
+2025-07-18 17:59:38 | INFO     | logging:callHandlers:1762 - Processed 90.json: 50 problems
+2025-07-18 17:59:39 | INFO     | logging:callHandlers:1762 - Processed 91.json: 50 problems
+2025-07-18 17:59:40 | INFO     | logging:callHandlers:1762 - Processed 92.json: 50 problems
+2025-07-18 17:59:40 | INFO     | logging:callHandlers:1762 - Processed 93.json: 50 problems
+2025-07-18 17:59:41 | INFO     | logging:callHandlers:1762 - Processed 94.json: 50 problems
+2025-07-18 17:59:41 | INFO     | logging:callHandlers:1762 - Processed 95.json: 50 problems
+2025-07-18 17:59:42 | INFO     | logging:callHandlers:1762 - Processed 96.json: 50 problems
+2025-07-18 17:59:42 | INFO     | logging:callHandlers:1762 - Processed 97.json: 50 problems
+2025-07-18 17:59:43 | INFO     | logging:callHandlers:1762 - Processed 98.json: 50 problems
+2025-07-18 17:59:44 | INFO     | logging:callHandlers:1762 - Processed 99.json: 50 problems
+2025-07-18 18:02:34 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:02:38 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:02:38 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:38 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 1
+2025-07-18 18:02:38 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:02:42 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:02:42 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:42 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 2
+2025-07-18 18:02:42 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:02:46 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:02:46 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:46 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 3
+2025-07-18 18:02:46 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:02:50 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:02:50 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:50 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 4
+2025-07-18 18:02:51 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:02:55 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:02:55 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:55 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 5
+2025-07-18 18:02:55 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:02:59 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:02:59 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:59 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 6
+2025-07-18 18:02:59 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:03 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:03 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:03 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 7
+2025-07-18 18:03:03 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:07 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:07 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:07 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 8
+2025-07-18 18:03:07 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:11 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:11 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:11 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 9
+2025-07-18 18:03:11 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:15 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:15 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:15 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 10
+2025-07-18 18:03:15 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:20 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:20 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:20 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 11
+2025-07-18 18:03:20 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:24 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:24 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:24 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 12
+2025-07-18 18:03:24 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:28 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:28 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:28 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 13
+2025-07-18 18:03:28 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:32 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:32 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:32 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 14
+2025-07-18 18:03:32 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:36 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:36 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:36 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 15
+2025-07-18 18:03:36 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:40 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:40 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:40 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 16
+2025-07-18 18:03:40 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:44 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:44 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:44 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 17
+2025-07-18 18:03:45 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:49 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:49 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:49 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 18
+2025-07-18 18:03:49 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:53 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:53 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:53 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 19
+2025-07-18 18:03:53 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:03:57 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:03:57 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:57 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 20
+2025-07-18 18:03:57 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:01 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:01 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:01 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 21
+2025-07-18 18:04:01 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:05 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:05 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:05 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 22
+2025-07-18 18:04:05 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:09 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:09 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:09 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 23
+2025-07-18 18:04:10 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:14 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:14 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:14 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 24
+2025-07-18 18:04:14 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:18 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:18 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:18 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 25
+2025-07-18 18:04:18 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:22 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:22 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:22 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 26
+2025-07-18 18:04:22 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:26 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:26 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:26 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 27
+2025-07-18 18:04:26 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:30 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:30 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:30 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 28
+2025-07-18 18:04:30 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:34 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:34 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:34 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 29
+2025-07-18 18:04:34 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:39 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:39 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:39 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 30
+2025-07-18 18:04:39 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:43 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, 'No connection could be made because the target machine actively refused it', None, 10061, None))
+2025-07-18 18:04:43 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:43 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 31
+2025-07-18 18:04:43 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='localhost' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:04:47 | DEBUG    | logging:callHandlers:1762 - connect_tcp.failed exception=KeyboardInterrupt()
+2025-07-18 18:27:58 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 18:27:58 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 18:27:58 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 18:27:58 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-18 18:27:59 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 18:27:59 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 18:27:59 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 18:27:59 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 18:27:59 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 18:28:00 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 18:28:00 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-18 18:28:00 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-18 18:28:00 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 18:28:00 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 18:28:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-18 18:28:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-18 18:28:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-18 18:28:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-18 18:28:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-18 18:28:04 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-18 18:28:04 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-18 18:28:04 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-18 18:28:04 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-18 18:28:05 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-18 18:28:05 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-18 18:28:05 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-18 18:28:05 | ERROR    | logging:callHandlers:1762 - Setup failed: 'Settings' object has no attribute 'QDRANT_CLOUD_API_KEY'
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 137, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000002005DB09300>
+    │       └ <function run at 0x000002001D8B00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000002005DA7AAC0>
+           │      └ <function Runner.run at 0x000002001D93F7E0>
+           └ <asyncio.runners.Runner object at 0x000002005DB0C740>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:131> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002001D93D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000002005DB0C740>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000002001DDFD1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002001D93F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002001D8818A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002005D8473A0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002005D8473A0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002005D8473A0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002005D8473A0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 102, in main
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 30, in __init__
+    api_key=settings.QDRANT_CLOUD_API_KEY,
+            └ Settings(APP_NAME='Math Routing Agent', VERSION='1.0.0', DEBUG=False, API_PREFIX='/api/v1', HOST='0.0.0.0', PORT=8000, GROQ_A...
+
+  File "D:\ai_Planet\venv\Lib\site-packages\pydantic\main.py", line 991, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+                                 │                                          └ 'QDRANT_CLOUD_API_KEY'
+                                 └ Settings(APP_NAME='Math Routing Agent', VERSION='1.0.0', DEBUG=False, API_PREFIX='/api/v1', HOST='0.0.0.0', PORT=8000, GROQ_A...
+
+AttributeError: 'Settings' object has no attribute 'QDRANT_CLOUD_API_KEY'. Did you mean: 'QDRANT_API_KEY'?
+2025-07-18 18:30:00 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 18:30:00 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 18:30:00 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 18:30:00 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-18 18:30:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 18:30:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 18:30:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 18:30:01 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 18:30:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 18:30:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 18:30:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-18 18:30:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-18 18:30:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 18:30:02 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 18:30:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-18 18:30:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-18 18:30:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-18 18:30:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-18 18:30:03 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-18 18:30:05 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-18 18:30:05 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-18 18:30:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-18 18:30:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-18 18:30:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-18 18:30:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-18 18:30:06 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-18 18:30:07 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029E1B30D460>
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000029E3CCD7D50> server_hostname='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' timeout=5.0
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000029E3CB8B200>
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - send_request_headers.started request=<Request [b'GET']>
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - send_request_headers.complete
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - send_request_body.started request=<Request [b'GET']>
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - send_request_body.complete
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.started request=<Request [b'GET']>
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Fri, 18 Jul 2025 13:00:10 GMT'), (b'Vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'Transfer-Encoding', b'chunked')])
+2025-07-18 18:30:11 | INFO     | logging:callHandlers:1762 - HTTP Request: GET https://379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - receive_response_body.started request=<Request [b'GET']>
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - receive_response_body.complete
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - response_closed.started
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - response_closed.complete
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - close.started
+2025-07-18 18:30:11 | DEBUG    | logging:callHandlers:1762 - close.complete
+2025-07-18 18:30:12 | INFO     | logging:callHandlers:1762 - Successfully connected to Qdrant Cloud
+2025-07-18 18:30:12 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 137, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000029E3B745300>
+    │       └ <function run at 0x0000029E7B2D00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x0000029E3B6BAAC0>
+           │      └ <function Runner.run at 0x0000029E7B35F7E0>
+           └ <asyncio.runners.Runner object at 0x0000029E3B74C2F0>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:131> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000029E7B35D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000029E3B74C2F0>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000029E7B82D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000029E7B35F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000029E7B2A18A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000029E3AD1E9E0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000029E3AD1E9E0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000029E3AD1E9E0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000029E3AD1E9E0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 102, in main
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x0000029E7F8F6980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x0000029E39061D30>
+    │       └ <function run at 0x0000029E7B2D00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-07-18 18:32:34 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 18:32:34 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 18:32:34 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 18:32:34 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-18 18:32:34 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 18:32:34 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 18:32:35 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 18:32:35 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 18:32:35 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 18:32:35 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 18:32:35 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-18 18:32:35 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-18 18:32:36 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 18:32:36 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 18:32:36 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-18 18:32:36 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-18 18:32:37 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-18 18:32:37 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-18 18:32:37 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-18 18:32:39 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-18 18:32:39 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-18 18:32:39 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-18 18:32:39 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-18 18:32:39 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-18 18:32:40 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-18 18:32:40 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-18 18:32:40 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C0E5D12F30>
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C0E5E57CD0> server_hostname='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' timeout=5.0
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C0E5C9FE00>
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - send_request_headers.started request=<Request [b'GET']>
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - send_request_headers.complete
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - send_request_body.started request=<Request [b'GET']>
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - send_request_body.complete
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.started request=<Request [b'GET']>
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Fri, 18 Jul 2025 13:02:44 GMT'), (b'Vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'Transfer-Encoding', b'chunked')])
+2025-07-18 18:32:44 | INFO     | logging:callHandlers:1762 - HTTP Request: GET https://379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - receive_response_body.started request=<Request [b'GET']>
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - receive_response_body.complete
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - response_closed.started
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - response_closed.complete
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - close.started
+2025-07-18 18:32:44 | DEBUG    | logging:callHandlers:1762 - close.complete
+2025-07-18 18:32:45 | INFO     | logging:callHandlers:1762 - Successfully connected to Qdrant Cloud
+2025-07-18 18:32:45 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 136, in <module>
+    run()
+    └ <function run at 0x000001C0E48C1440>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 130, in run
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001C0E48C13A0>
+    │       └ <function run at 0x000001C0A45C00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000001C0E484A790>
+           │      └ <function Runner.run at 0x000001C0A464F7E0>
+           └ <asyncio.runners.Runner object at 0x000001C0E46B8710>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:123> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000001C0A464D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000001C0E46B8710>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001C0A4B1D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001C0A464F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001C0A45918A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C0E3ADB6A0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C0E3ADB6A0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C0E3ADB6A0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C0E3ADB6A0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 97, in main
+    processor = await initialize_processor()
+                      └ <function initialize_processor at 0x000001C0A4BE3BA0>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 36, in initialize_processor
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x000001C0BDBB6980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x000001C0E455CAA0>
+    │       └ <function run at 0x000001C0A45C00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-07-18 18:33:25 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 18:33:25 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 18:33:25 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 18:33:25 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-18 18:33:26 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 18:33:26 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 18:33:26 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 18:33:26 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 18:33:26 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 18:33:26 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 18:33:26 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-18 18:33:26 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-18 18:33:27 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 18:33:27 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 18:33:27 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-18 18:33:27 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-18 18:33:27 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-18 18:33:28 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-18 18:33:28 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-18 18:33:29 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-18 18:33:29 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-18 18:33:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-18 18:33:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-18 18:33:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-18 18:33:30 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-18 18:33:30 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-18 18:33:31 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:33:32 | DEBUG    | logging:callHandlers:1762 - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BBB71430B0>
+2025-07-18 18:33:32 | DEBUG    | logging:callHandlers:1762 - start_tls.started ssl_context=<ssl.SSLContext object at 0x000002BBB72F7CD0> server_hostname='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' timeout=5.0
+2025-07-18 18:33:32 | DEBUG    | logging:callHandlers:1762 - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000002BBB72A99A0>
+2025-07-18 18:33:32 | DEBUG    | logging:callHandlers:1762 - send_request_headers.started request=<Request [b'GET']>
+2025-07-18 18:33:32 | DEBUG    | logging:callHandlers:1762 - send_request_headers.complete
+2025-07-18 18:33:32 | DEBUG    | logging:callHandlers:1762 - send_request_body.started request=<Request [b'GET']>
+2025-07-18 18:33:32 | DEBUG    | logging:callHandlers:1762 - send_request_body.complete
+2025-07-18 18:33:32 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.started request=<Request [b'GET']>
+2025-07-18 18:33:33 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Fri, 18 Jul 2025 13:03:32 GMT'), (b'Vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'Transfer-Encoding', b'chunked')])
+2025-07-18 18:33:33 | INFO     | logging:callHandlers:1762 - HTTP Request: GET https://379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-07-18 18:33:33 | DEBUG    | logging:callHandlers:1762 - receive_response_body.started request=<Request [b'GET']>
+2025-07-18 18:33:33 | DEBUG    | logging:callHandlers:1762 - receive_response_body.complete
+2025-07-18 18:33:33 | DEBUG    | logging:callHandlers:1762 - response_closed.started
+2025-07-18 18:33:33 | DEBUG    | logging:callHandlers:1762 - response_closed.complete
+2025-07-18 18:33:33 | DEBUG    | logging:callHandlers:1762 - close.started
+2025-07-18 18:33:33 | DEBUG    | logging:callHandlers:1762 - close.complete
+2025-07-18 18:33:33 | INFO     | logging:callHandlers:1762 - Successfully connected to Qdrant Cloud
+2025-07-18 18:33:33 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 136, in <module>
+    run()
+    └ <function run at 0x000002BBB5D5D440>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 130, in run
+    asyncio.run(main())
+    │       │   └ <function main at 0x000002BBB5D5D3A0>
+    │       └ <function run at 0x000002BBF59F00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000002BBB5CEE790>
+           │      └ <function Runner.run at 0x000002BBF5A7F7E0>
+           └ <asyncio.runners.Runner object at 0x000002BBB5D686B0>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:123> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002BBF5A7D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000002BBB5D686B0>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000002BBF5B4D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002BBF5A7F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002BBF59C18A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002BBB5C6E8C0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002BBB5C6E8C0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002BBB5C6E8C0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002BBB5C6E8C0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 97, in main
+    processor = await initialize_processor()
+                      └ <function initialize_processor at 0x000002BBF600FBA0>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 36, in initialize_processor
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x000002BB8F066980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x000002BBB5CFBB60>
+    │       └ <function run at 0x000002BBF59F00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-07-18 18:35:52 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-18 18:35:52 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 18:35:52 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-18 18:35:52 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-18 18:35:53 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 18:35:53 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 18:35:53 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 18:35:53 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 18:35:53 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-18 18:35:53 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-18 18:35:53 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-18 18:35:54 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-18 18:35:54 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-18 18:35:54 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-18 18:35:54 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-18 18:35:54 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-18 18:35:54 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-18 18:35:55 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-18 18:35:55 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-18 18:35:57 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-18 18:35:57 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-18 18:35:57 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-18 18:35:57 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-18 18:35:58 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-18 18:35:58 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-18 18:35:58 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-18 18:35:59 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000019CD3E699D0>
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000019CD3FA7C50> server_hostname='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' timeout=5.0
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000019CD3E60530>
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - send_request_headers.started request=<Request [b'GET']>
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - send_request_headers.complete
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - send_request_body.started request=<Request [b'GET']>
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - send_request_body.complete
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.started request=<Request [b'GET']>
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Fri, 18 Jul 2025 13:06:00 GMT'), (b'Vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'Transfer-Encoding', b'chunked')])
+2025-07-18 18:36:00 | INFO     | logging:callHandlers:1762 - HTTP Request: GET https://379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - receive_response_body.started request=<Request [b'GET']>
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - receive_response_body.complete
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - response_closed.started
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - response_closed.complete
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - close.started
+2025-07-18 18:36:00 | DEBUG    | logging:callHandlers:1762 - close.complete
+2025-07-18 18:36:01 | INFO     | logging:callHandlers:1762 - Successfully connected to Qdrant Cloud
+2025-07-18 18:36:01 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 136, in <module>
+    run()
+    └ <function run at 0x0000019CD2A15440>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 130, in run
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000019CD2A153A0>
+    │       └ <function run at 0x0000019C927B00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x0000019CD298A9B0>
+           │      └ <function Runner.run at 0x0000019C9283F7E0>
+           └ <asyncio.runners.Runner object at 0x0000019CD2A18800>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:123> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000019C9283D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000019CD2A18800>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000019C92D0D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000019C9283F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000019C927818A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019CD29498A0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019CD29498A0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019CD29498A0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019CD29498A0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 97, in main
+    processor = await initialize_processor()
+                      └ <function initialize_processor at 0x0000019C92DD3CE0>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 36, in initialize_processor
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x0000019CABDA6980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x0000019CCF7C2570>
+    │       └ <function run at 0x0000019C927B00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-07-19 11:59:47 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-19 11:59:47 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-19 11:59:47 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-19 11:59:47 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-19 11:59:48 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-19 11:59:48 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-19 11:59:48 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-19 11:59:49 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-19 11:59:49 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-19 11:59:49 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-19 11:59:49 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-19 11:59:49 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-19 11:59:50 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-19 11:59:50 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-19 11:59:50 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-19 11:59:50 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-19 11:59:51 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-19 11:59:51 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-19 11:59:51 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-19 11:59:53 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-19 11:59:53 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-19 11:59:53 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-19 11:59:54 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-19 11:59:54 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-19 11:59:54 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-19 11:59:54 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-19 11:59:55 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-19 11:59:55 | DEBUG    | logging:callHandlers:1762 - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C529007680>
+2025-07-19 11:59:55 | DEBUG    | logging:callHandlers:1762 - start_tls.started ssl_context=<ssl.SSLContext object at 0x000001C52904FC50> server_hostname='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' timeout=5.0
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x000001C527CF11C0>
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - send_request_headers.started request=<Request [b'GET']>
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - send_request_headers.complete
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - send_request_body.started request=<Request [b'GET']>
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - send_request_body.complete
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.started request=<Request [b'GET']>
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Sat, 19 Jul 2025 06:29:55 GMT'), (b'Vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'Transfer-Encoding', b'chunked')])
+2025-07-19 11:59:56 | INFO     | logging:callHandlers:1762 - HTTP Request: GET https://379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - receive_response_body.started request=<Request [b'GET']>
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - receive_response_body.complete
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - response_closed.started
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - response_closed.complete
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - close.started
+2025-07-19 11:59:56 | DEBUG    | logging:callHandlers:1762 - close.complete
+2025-07-19 11:59:57 | INFO     | logging:callHandlers:1762 - Successfully connected to Qdrant Cloud
+2025-07-19 11:59:57 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 136, in <module>
+    run()
+    └ <function run at 0x000001C527AC1440>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 130, in run
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001C527AC13A0>
+    │       └ <function run at 0x000001C5677300E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000001C527A4E790>
+           │      └ <function Runner.run at 0x000001C5677BB7E0>
+           └ <asyncio.runners.Runner object at 0x000001C527AC86E0>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:123> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000001C5677B9440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000001C527AC86E0>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001C56787D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001C5677BB1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001C5677018A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C527A93C40>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C527A93C40>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C527A93C40>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C527A93C40>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 97, in main
+    processor = await initialize_processor()
+                      └ <function initialize_processor at 0x000001C567D3FBA0>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 36, in initialize_processor
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x000001C57FD46980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x000001C527A2B4D0>
+    │       └ <function run at 0x000001C5677300E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop

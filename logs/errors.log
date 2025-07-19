@@ -1,0 +1,586 @@
+2025-07-18 17:05:11 | ERROR    | logging:callHandlers:1762 - Setup failed: 'MathDatasetProcessor' object has no attribute 'qdrant_client'
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 93, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000013ABB8EBE20>
+    │       └ <function run at 0x0000013AFBAA4040>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x0000013ABBCF2640>
+           │      └ <function Runner.run at 0x0000013AFBB23740>
+           └ <asyncio.runners.Runner object at 0x0000013ABBCE30B0>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:87> cb=[_...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000013AFBB213A0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000013ABBCE30B0>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000013AFBFED120>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000013AFBB23100>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000013AFBA71800>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000013ABBA7F190>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000013ABBA7F190>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000013ABBA7F190>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000013ABBA7F190>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 68, in main
+    print(f"🔍 Vector embeddings stored in Qdrant collection: {processor.qdrant_client._collection_name}")
+                                                              └ <app.utils.data_processor.MathDatasetProcessor object at 0x0000013ABBD1AE70>
+
+AttributeError: 'MathDatasetProcessor' object has no attribute 'qdrant_client'
+2025-07-18 17:14:32 | ERROR    | logging:callHandlers:1762 - Error generating embeddings: asyncio.run() cannot be called from a running event loop
+2025-07-18 17:14:32 | ERROR    | logging:callHandlers:1762 - Setup failed: 'MathDatasetProcessor' object has no attribute 'qdrant_client'
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 93, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000002663A45BE20>
+    │       └ <function run at 0x000002667A614040>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000002663A862640>
+           │      └ <function Runner.run at 0x000002667A693740>
+           └ <asyncio.runners.Runner object at 0x000002663A8531A0>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:87> cb=[_...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002667A6913A0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000002663A8531A0>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000002667AB5D120>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002667A693100>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002667A5E1800>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000266359A9C60>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000266359A9C60>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000266359A9C60>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x00000266359A9C60>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 68, in main
+    print(f"🔍 Vector embeddings stored in Qdrant collection: {processor.qdrant_client._collection_name}")
+                                                              └ <app.utils.data_processor.MathDatasetProcessor object at 0x000002663A88AEA0>
+
+AttributeError: 'MathDatasetProcessor' object has no attribute 'qdrant_client'
+2025-07-18 17:51:11 | ERROR    | logging:callHandlers:1762 - Setup failed: object of type 'coroutine' has no len()
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 93, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001FC01847D80>
+    │       └ <function run at 0x000001FC419B4040>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000001FC01C52640>
+           │      └ <function Runner.run at 0x000001FC41A33740>
+           └ <asyncio.runners.Runner object at 0x000001FC01C3F050>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:87> cb=[_...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000001FC41A313A0>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000001FC01C3F050>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001FC41F0D120>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001FC41A33100>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001FC4197D800>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001FC01BC77C0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001FC01BC77C0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001FC01BC77C0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001FC01BC77C0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 65, in main
+    print(f"\n✅ Successfully processed {len(processed_problems)} problems!")
+                                            └ <coroutine object MathDatasetProcessor.process_complete_dataset at 0x000001FC032CFD80>
+
+TypeError: object of type 'coroutine' has no len()
+2025-07-18 18:02:38 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:38 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 1
+2025-07-18 18:02:42 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:42 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 2
+2025-07-18 18:02:46 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:46 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 3
+2025-07-18 18:02:50 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:50 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 4
+2025-07-18 18:02:55 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:55 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 5
+2025-07-18 18:02:59 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:02:59 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 6
+2025-07-18 18:03:03 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:03 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 7
+2025-07-18 18:03:07 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:07 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 8
+2025-07-18 18:03:11 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:11 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 9
+2025-07-18 18:03:15 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:15 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 10
+2025-07-18 18:03:20 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:20 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 11
+2025-07-18 18:03:24 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:24 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 12
+2025-07-18 18:03:28 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:28 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 13
+2025-07-18 18:03:32 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:32 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 14
+2025-07-18 18:03:36 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:36 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 15
+2025-07-18 18:03:40 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:40 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 16
+2025-07-18 18:03:44 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:44 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 17
+2025-07-18 18:03:49 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:49 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 18
+2025-07-18 18:03:53 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:53 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 19
+2025-07-18 18:03:57 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:03:57 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 20
+2025-07-18 18:04:01 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:01 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 21
+2025-07-18 18:04:05 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:05 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 22
+2025-07-18 18:04:09 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:09 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 23
+2025-07-18 18:04:14 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:14 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 24
+2025-07-18 18:04:18 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:18 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 25
+2025-07-18 18:04:22 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:22 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 26
+2025-07-18 18:04:26 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:26 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 27
+2025-07-18 18:04:30 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:30 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 28
+2025-07-18 18:04:34 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:34 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 29
+2025-07-18 18:04:39 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:39 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 30
+2025-07-18 18:04:43 | ERROR    | logging:callHandlers:1762 - Error adding vectors: [WinError 10061] No connection could be made because the target machine actively refused it
+2025-07-18 18:04:43 | ERROR    | logging:callHandlers:1762 - Failed to store embedding batch 31
+2025-07-18 18:28:05 | ERROR    | logging:callHandlers:1762 - Setup failed: 'Settings' object has no attribute 'QDRANT_CLOUD_API_KEY'
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 137, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000002005DB09300>
+    │       └ <function run at 0x000002001D8B00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000002005DA7AAC0>
+           │      └ <function Runner.run at 0x000002001D93F7E0>
+           └ <asyncio.runners.Runner object at 0x000002005DB0C740>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:131> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002001D93D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000002005DB0C740>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000002001DDFD1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002001D93F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002001D8818A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002005D8473A0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002005D8473A0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002005D8473A0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002005D8473A0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 102, in main
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 30, in __init__
+    api_key=settings.QDRANT_CLOUD_API_KEY,
+            └ Settings(APP_NAME='Math Routing Agent', VERSION='1.0.0', DEBUG=False, API_PREFIX='/api/v1', HOST='0.0.0.0', PORT=8000, GROQ_A...
+
+  File "D:\ai_Planet\venv\Lib\site-packages\pydantic\main.py", line 991, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+                                 │                                          └ 'QDRANT_CLOUD_API_KEY'
+                                 └ Settings(APP_NAME='Math Routing Agent', VERSION='1.0.0', DEBUG=False, API_PREFIX='/api/v1', HOST='0.0.0.0', PORT=8000, GROQ_A...
+
+AttributeError: 'Settings' object has no attribute 'QDRANT_CLOUD_API_KEY'. Did you mean: 'QDRANT_API_KEY'?
+2025-07-18 18:30:12 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 137, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000029E3B745300>
+    │       └ <function run at 0x0000029E7B2D00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x0000029E3B6BAAC0>
+           │      └ <function Runner.run at 0x0000029E7B35F7E0>
+           └ <asyncio.runners.Runner object at 0x0000029E3B74C2F0>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:131> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000029E7B35D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000029E3B74C2F0>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000029E7B82D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000029E7B35F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000029E7B2A18A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000029E3AD1E9E0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000029E3AD1E9E0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000029E3AD1E9E0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000029E3AD1E9E0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 102, in main
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x0000029E7F8F6980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x0000029E39061D30>
+    │       └ <function run at 0x0000029E7B2D00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-07-18 18:32:45 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 136, in <module>
+    run()
+    └ <function run at 0x000001C0E48C1440>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 130, in run
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001C0E48C13A0>
+    │       └ <function run at 0x000001C0A45C00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000001C0E484A790>
+           │      └ <function Runner.run at 0x000001C0A464F7E0>
+           └ <asyncio.runners.Runner object at 0x000001C0E46B8710>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:123> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000001C0A464D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000001C0E46B8710>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001C0A4B1D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001C0A464F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001C0A45918A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C0E3ADB6A0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C0E3ADB6A0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C0E3ADB6A0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C0E3ADB6A0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 97, in main
+    processor = await initialize_processor()
+                      └ <function initialize_processor at 0x000001C0A4BE3BA0>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 36, in initialize_processor
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x000001C0BDBB6980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x000001C0E455CAA0>
+    │       └ <function run at 0x000001C0A45C00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-07-18 18:33:33 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 136, in <module>
+    run()
+    └ <function run at 0x000002BBB5D5D440>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 130, in run
+    asyncio.run(main())
+    │       │   └ <function main at 0x000002BBB5D5D3A0>
+    │       └ <function run at 0x000002BBF59F00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000002BBB5CEE790>
+           │      └ <function Runner.run at 0x000002BBF5A7F7E0>
+           └ <asyncio.runners.Runner object at 0x000002BBB5D686B0>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:123> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002BBF5A7D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000002BBB5D686B0>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000002BBF5B4D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002BBF5A7F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000002BBF59C18A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002BBB5C6E8C0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002BBB5C6E8C0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002BBB5C6E8C0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000002BBB5C6E8C0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 97, in main
+    processor = await initialize_processor()
+                      └ <function initialize_processor at 0x000002BBF600FBA0>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 36, in initialize_processor
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x000002BB8F066980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x000002BBB5CFBB60>
+    │       └ <function run at 0x000002BBF59F00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-07-18 18:36:01 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 136, in <module>
+    run()
+    └ <function run at 0x0000019CD2A15440>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 130, in run
+    asyncio.run(main())
+    │       │   └ <function main at 0x0000019CD2A153A0>
+    │       └ <function run at 0x0000019C927B00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x0000019CD298A9B0>
+           │      └ <function Runner.run at 0x0000019C9283F7E0>
+           └ <asyncio.runners.Runner object at 0x0000019CD2A18800>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:123> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x0000019C9283D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x0000019CD2A18800>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000019C92D0D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x0000019C9283F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x0000019C927818A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019CD29498A0>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019CD29498A0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019CD29498A0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000019CD29498A0>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 97, in main
+    processor = await initialize_processor()
+                      └ <function initialize_processor at 0x0000019C92DD3CE0>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 36, in initialize_processor
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x0000019CABDA6980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x0000019CCF7C2570>
+    │       └ <function run at 0x0000019C927B00E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-07-19 11:59:57 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 136, in <module>
+    run()
+    └ <function run at 0x000001C527AC1440>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 130, in run
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001C527AC13A0>
+    │       └ <function run at 0x000001C5677300E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000001C527A4E790>
+           │      └ <function Runner.run at 0x000001C5677BB7E0>
+           └ <asyncio.runners.Runner object at 0x000001C527AC86E0>
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:123> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000001C5677B9440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x000001C527AC86E0>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x000001C56787D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000001C5677BB1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x000001C5677018A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C527A93C40>()>
+  File "D:\ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C527A93C40>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C527A93C40>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x000001C527A93C40>()>
+
+> File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 97, in main
+    processor = await initialize_processor()
+                      └ <function initialize_processor at 0x000001C567D3FBA0>
+
+  File "D:\ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 36, in initialize_processor
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x000001C57FD46980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x000001C527A2B4D0>
+    │       └ <function run at 0x000001C5677300E0>
+    └ <module 'asyncio' from 'D:\\ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop
