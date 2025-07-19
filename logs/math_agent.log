@@ -1500,3 +1500,113 @@ Traceback (most recent call last):
     raise RuntimeError(
 
 RuntimeError: asyncio.run() cannot be called from a running event loop
+2025-07-19 12:28:06 | DEBUG    | logging:callHandlers:1762 - Using proactor: IocpProactor
+2025-07-19 12:28:06 | INFO     | logging:callHandlers:1762 - Loading embedding model: sentence-transformers/all-MiniLM-L6-v2
+2025-07-19 12:28:06 | INFO     | logging:callHandlers:1762 - Load pretrained SentenceTransformer: sentence-transformers/all-MiniLM-L6-v2
+2025-07-19 12:28:06 | DEBUG    | logging:callHandlers:1762 - Starting new HTTPS connection (1): huggingface.co:443
+2025-07-19 12:28:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-19 12:28:06 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-19 12:28:07 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-19 12:28:07 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-19 12:28:07 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 307 0
+2025-07-19 12:28:07 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-07-19 12:28:08 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 307 0
+2025-07-19 12:28:08 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/README.md HTTP/1.1" 200 0
+2025-07-19 12:28:08 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 307 0
+2025-07-19 12:28:08 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/modules.json HTTP/1.1" 200 0
+2025-07-19 12:28:09 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 307 0
+2025-07-19 12:28:09 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/sentence_bert_config.json HTTP/1.1" 200 0
+2025-07-19 12:28:09 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-07-19 12:28:09 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 307 0
+2025-07-19 12:28:10 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/config.json HTTP/1.1" 200 0
+2025-07-19 12:28:11 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 307 0
+2025-07-19 12:28:11 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/tokenizer_config.json HTTP/1.1" 200 0
+2025-07-19 12:28:12 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-07-19 12:28:12 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json HTTP/1.1" 307 0
+2025-07-19 12:28:12 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "HEAD /api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling%2Fconfig.json HTTP/1.1" 200 0
+2025-07-19 12:28:12 | DEBUG    | logging:callHandlers:1762 - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6849
+2025-07-19 12:28:12 | INFO     | logging:callHandlers:1762 - Embedding model loaded successfully on cpu
+2025-07-19 12:28:13 | DEBUG    | logging:callHandlers:1762 - connect_tcp.started host='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' port=6333 local_address=None timeout=5.0 socket_options=None
+2025-07-19 12:28:13 | DEBUG    | logging:callHandlers:1762 - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000028959FF82F0>
+2025-07-19 12:28:13 | DEBUG    | logging:callHandlers:1762 - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000028959F6BAD0> server_hostname='379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io' timeout=5.0
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000028958BFB0B0>
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - send_request_headers.started request=<Request [b'GET']>
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - send_request_headers.complete
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - send_request_body.started request=<Request [b'GET']>
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - send_request_body.complete
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.started request=<Request [b'GET']>
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Content-Encoding', b'gzip'), (b'Content-Type', b'application/json'), (b'Date', b'Sat, 19 Jul 2025 06:58:13 GMT'), (b'Vary', b'accept-encoding, Origin, Access-Control-Request-Method, Access-Control-Request-Headers'), (b'Transfer-Encoding', b'chunked')])
+2025-07-19 12:28:14 | INFO     | logging:callHandlers:1762 - HTTP Request: GET https://379d9ce3-70cb-46c4-938c-2a9f2f39fa7c.eu-west-1-0.aws.cloud.qdrant.io:6333 "HTTP/1.1 200 OK"
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - receive_response_body.started request=<Request [b'GET']>
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - receive_response_body.complete
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - response_closed.started
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - response_closed.complete
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - close.started
+2025-07-19 12:28:14 | DEBUG    | logging:callHandlers:1762 - close.complete
+2025-07-19 12:28:15 | INFO     | logging:callHandlers:1762 - Successfully connected to Qdrant Cloud
+2025-07-19 12:28:15 | ERROR    | logging:callHandlers:1762 - Setup failed: asyncio.run() cannot be called from a running event loop
+Traceback (most recent call last):
+
+  File "D:\Ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 136, in <module>
+    run()
+    └ <function run at 0x00000289589C9440>
+
+  File "D:\Ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 130, in run
+    asyncio.run(main())
+    │       │   └ <function main at 0x00000289589C93A0>
+    │       └ <function run at 0x00000289187000E0>
+    └ <module 'asyncio' from 'D:\\Ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\Ai_Planet\venv\Lib\asyncio\runners.py", line 194, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000002895895A790>
+           │      └ <function Runner.run at 0x000002891878F7E0>
+           └ <asyncio.runners.Runner object at 0x00000289589CC650>
+  File "D:\Ai_Planet\venv\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │     │                  └ <Task pending name='Task-1' coro=<main() running at D:\Ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py:123> cb=[...
+           │    │     └ <function BaseEventLoop.run_until_complete at 0x000002891878D440>
+           │    └ <ProactorEventLoop running=True closed=False debug=False>
+           └ <asyncio.runners.Runner object at 0x00000289589CC650>
+  File "D:\Ai_Planet\venv\Lib\asyncio\base_events.py", line 651, in run_until_complete
+    self.run_forever()
+    │    └ <function ProactorEventLoop.run_forever at 0x0000028918C5D1C0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\Ai_Planet\venv\Lib\asyncio\windows_events.py", line 321, in run_forever
+    super().run_forever()
+  File "D:\Ai_Planet\venv\Lib\asyncio\base_events.py", line 618, in run_forever
+    self._run_once()
+    │    └ <function BaseEventLoop._run_once at 0x000002891878F1A0>
+    └ <ProactorEventLoop running=True closed=False debug=False>
+  File "D:\Ai_Planet\venv\Lib\asyncio\base_events.py", line 1951, in _run_once
+    handle._run()
+    │      └ <function Handle._run at 0x00000289186D18A0>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000028957E455A0>()>
+  File "D:\Ai_Planet\venv\Lib\asyncio\events.py", line 84, in _run
+    self._context.run(self._callback, *self._args)
+    │    │            │    │           │    └ <member '_args' of 'Handle' objects>
+    │    │            │    │           └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000028957E455A0>()>
+    │    │            │    └ <member '_callback' of 'Handle' objects>
+    │    │            └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000028957E455A0>()>
+    │    └ <member '_context' of 'Handle' objects>
+    └ <Handle <_asyncio.TaskStepMethWrapper object at 0x0000028957E455A0>()>
+
+> File "D:\Ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 97, in main
+    processor = await initialize_processor()
+                      └ <function initialize_processor at 0x000002895893BF60>
+
+  File "D:\Ai_Planet\math_agent\backend\scripts\setup_knowledge_base.py", line 36, in initialize_processor
+    processor = MathDatasetProcessor()
+                └ <class 'app.utils.data_processor.MathDatasetProcessor'>
+
+  File "D:\Ai_Planet\math_agent\backend\app\utils\data_processor.py", line 35, in __init__
+    asyncio.run(self._initialize_collection())
+    │       │   │    └ <function MathDatasetProcessor._initialize_collection at 0x0000028931CF6980>
+    │       │   └ <app.utils.data_processor.MathDatasetProcessor object at 0x00000289585DC230>
+    │       └ <function run at 0x00000289187000E0>
+    └ <module 'asyncio' from 'D:\\Ai_Planet\\venv\\Lib\\asyncio\\__init__.py'>
+
+  File "D:\Ai_Planet\venv\Lib\asyncio\runners.py", line 190, in run
+    raise RuntimeError(
+
+RuntimeError: asyncio.run() cannot be called from a running event loop

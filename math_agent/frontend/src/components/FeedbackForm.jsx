@@ -1,175 +1,162 @@
-import React, { useState, useEffect } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
-import { TrendingUp, MessageSquare, Users, Star } from 'lucide-react';
-import { feedbackAPI } from '../services/api';
+import React, { useState } from 'react';
+import { Star, Send, AlertCircle } from 'lucide-react';
 
-const FeedbackDashboard = () => {
-  const [stats, setStats] = useState(null);
-  const [insights, setInsights] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const [selectedPeriod, setSelectedPeriod] = useState(30);
+const FeedbackForm = ({ onSubmit, isSubmitting, onCancel }) => {
+  const [feedbackData, setFeedbackData] = useState({
+    rating: 5,
+    feedback_type: 'general',
+    feedback_text: '',
+    user_suggestions: ''
+  });
 
-  useEffect(() => {
-    loadDashboardData();
-  }, [selectedPeriod]);
+  const [errors, setErrors] = useState({});
 
-  const loadDashboardData = async () => {
-    setLoading(true);
-    try {
-      const [statsResponse, insightsResponse] = await Promise.all([
-        feedbackAPI.getFeedbackStats(selectedPeriod),
-        feedbackAPI.getLearningInsights()
-      ]);
-      
-      setStats(statsResponse);
-      setInsights(insightsResponse);
-    } catch (error) {
-      console.error('Error loading dashboard data:', error);
-    } finally {
-      setLoading(false);
+  const validateForm = () => {
+    const newErrors = {};
+    
+    if (!feedbackData.feedback_text.trim() && !feedbackData.user_suggestions.trim()) {
+      newErrors.content = 'Please provide either feedback text or suggestions';
     }
+    
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
   };
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-50 py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <LoadingSpinner size="large" message="Loading feedback dashboard..." />
-        </div>
-      </div>
-    );
-  }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    if (!validateForm()) {
+      return;
+    }
+    
+    onSubmit(feedbackData);
+  };
 
-  const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
+  const handleRatingChange = (rating) => {
+    setFeedbackData(prev => ({ ...prev, rating }));
+  };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Feedback Dashboard</h1>
-          
-          <div className="flex items-center space-x-4">
-            <label className="text-sm font-medium text-gray-700">Time Period:</label>
-            <select
-              value={selectedPeriod}
-              onChange={(e) => setSelectedPeriod(Number(e.target.value))}
-              className="px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            >
-              <option value={7}>Last 7 days</option>
-              <option value={30}>Last 30 days</option>
-              <option value={90}>Last 90 days</option>
-            </select>
+    <div className="bg-white rounded-lg shadow-lg p-6 max-w-2xl mx-auto">
+      <h3 className="text-xl font-semibold mb-6 flex items-center">
+        <Star className="w-5 h-5 mr-2 text-yellow-500" />
+        Share Your Feedback
+      </h3>
+      
+      <form onSubmit={handleSubmit} className="space-y-6">
+        {/* Rating Section */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            How would you rate this solution? *
+          </label>
+          <div className="flex space-x-2">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <button
+                key={star}
+                type="button"
+                onClick={() => handleRatingChange(star)}
+                className={`p-1 transition-colors ${
+                  star <= feedbackData.rating
+                    ? 'text-yellow-400 hover:text-yellow-500'
+                    : 'text-gray-300 hover:text-gray-400'
+                }`}
+              >
+                <Star className={`w-6 h-6 ${star <= feedbackData.rating ? 'fill-current' : ''}`} />
+              </button>
+            ))}
+            <span className="ml-2 text-sm text-gray-600">
+              ({feedbackData.rating}/5)
+            </span>
           </div>
         </div>
 
-        {stats && (
-          <>
-            {/* Key Metrics */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-              <div className="bg-white rounded-lg shadow p-6">
-                <div className="flex items-center">
-                  <Star className="w-8 h-8 text-yellow-600" />
-                  <div className="ml-3">
-                    <p className="text-sm font-medium text-gray-500">Average Rating</p>
-                    <p className="text-2xl font-semibold text-gray-900">{stats.average_rating}/5</p>
-                  </div>
-                </div>
-              </div>
+        {/* Feedback Type */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            What aspect would you like to comment on?
+          </label>
+          <select
+            value={feedbackData.feedback_type}
+            onChange={(e) => setFeedbackData(prev => ({ ...prev, feedback_type: e.target.value }))}
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          >
+            <option value="general">General Feedback</option>
+            <option value="correctness">Mathematical Correctness</option>
+            <option value="clarity">Explanation Clarity</option>
+            <option value="completeness">Solution Completeness</option>
+            <option value="difficulty">Difficulty Level</option>
+            <option value="relevance">Relevance to Question</option>
+          </select>
+        </div>
 
-              <div className="bg-white rounded-lg shadow p-6">
-                <div className="flex items-center">
-                  <TrendingUp className="w-8 h-8 text-green-600" />
-                  <div className="ml-3">
-                    <p className="text-sm font-medium text-gray-500">Positive Feedback</p>
-                    <p className="text-2xl font-semibold text-gray-900">{stats.positive_feedback}</p>
-                  </div>
-                </div>
-              </div>
+        {/* Feedback Text */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Comments
+          </label>
+          <textarea
+            value={feedbackData.feedback_text}
+            onChange={(e) => setFeedbackData(prev => ({ ...prev, feedback_text: e.target.value }))}
+            placeholder="Share your thoughts about this solution..."
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+            rows={4}
+            maxLength={1000}
+          />
+          <div className="text-sm text-gray-500 mt-1">
+            {feedbackData.feedback_text.length}/1000 characters
+          </div>
+        </div>
 
-              <div className="bg-white rounded-lg shadow p-6">
-                <div className="flex items-center">
-                  <Users className="w-8 h-8 text-purple-600" />
-                  <div className="ml-3">
-                    <p className="text-sm font-medium text-gray-500">Negative Feedback</p>
-                    <p className="text-2xl font-semibold text-gray-900">{stats.negative_feedback}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        {/* Suggestions */}
+        <div>
+          <label className="block text-sm font-medium text-gray-700 mb-2">
+            Suggestions for Improvement
+          </label>
+          <textarea
+            value={feedbackData.user_suggestions}
+            onChange={(e) => setFeedbackData(prev => ({ ...prev, user_suggestions: e.target.value }))}
+            placeholder="How could this solution be improved?"
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
+            rows={3}
+            maxLength={500}
+          />
+          <div className="text-sm text-gray-500 mt-1">
+            {feedbackData.user_suggestions.length}/500 characters
+          </div>
+        </div>
 
-            {/* Charts */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-              {/* Feedback by Type */}
-              <div className="bg-white rounded-lg shadow p-6">
-                <h3 className="text-lg font-semibold mb-4">Feedback by Type</h3>
-                <ResponsiveContainer width="100%" height={300}>
-                  <BarChart data={stats.feedback_by_type}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="type" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="count" fill="#8884d8" />
-                    <Bar dataKey="avg_rating" fill="#82ca9d" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-
-              {/* Daily Trends */}
-              <div className="bg-white rounded-lg shadow p-6">
-                <h3 className="text-lg font-semibold mb-4">Daily Trends</h3>
-                <ResponsiveContainer width="100%" height={300}>
-                  <BarChart data={stats.daily_trends}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="date" />
-                    <YAxis />
-                    <Tooltip />
-                    <Legend />
-                    <Bar dataKey="count" fill="#8884d8" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-            </div>
-
-            {/* Learning Insights */}
-            {insights && (
-              <div className="bg-white rounded-lg shadow p-6">
-                <h3 className="text-lg font-semibold mb-4">Learning Insights</h3>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-medium text-gray-900 mb-3">Key Insights</h4>
-                    <ul className="space-y-2">
-                      {insights.insights?.map((insight, index) => (
-                        <li key={index} className="flex items-start">
-                          <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0" />
-                          <span className="text-gray-700">{insight}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-medium text-gray-900 mb-3">Recommendations</h4>
-                    <ul className="space-y-2">
-                      {insights.recommendations?.map((recommendation, index) => (
-                        <li key={index} className="flex items-start">
-                          <div className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0" />
-                          <span className="text-gray-700">{recommendation}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-                
-                <div className="mt-4 text-sm text-gray-500">
-                  Analysis based on {insights.data_points} feedback entries over {insights.analysis_period}
-                </div>
-              </div>
-            )}
-          </>
+        {/* Error Display */}
+        {errors.content && (
+          <div className="flex items-center p-3 bg-red-50 border border-red-200 rounded-lg">
+            <AlertCircle className="w-5 h-5 text-red-600 mr-2" />
+            <span className="text-sm text-red-800">{errors.content}</span>
+          </div>
         )}
-      </div>
+
+        {/* Action Buttons */}
+        <div className="flex gap-3 pt-4">
+          <button
+            type="submit"
+            disabled={isSubmitting}
+            className="flex items-center px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 disabled:bg-blue-400 disabled:cursor-not-allowed transition-colors"
+          >
+            <Send className="w-4 h-4 mr-2" />
+            {isSubmitting ? 'Submitting...' : 'Submit Feedback'}
+          </button>
+          
+          {onCancel && (
+            <button
+              type="button"
+              onClick={onCancel}
+              className="px-6 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors"
+            >
+              Cancel
+            </button>
+          )}
+        </div>
+      </form>
     </div>
   );
 };
+
+export default FeedbackForm;
